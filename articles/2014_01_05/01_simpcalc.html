@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>简单计算器</title> 
+		<link rel="stylesheet" type="text/css" href="../../css/index.css" />
+	</head>
+	<body>
+		<h4 id="title">简单计算器</h4>
+		<script type="text/javascript">
+			var s = 0;
+			var a , b;
+			function move(x,y)
+			{
+				var scr = document.getElementById("scr");
+				var n = scr.value;
+				if(y==0)
+				{
+					if(s==0)
+					{
+						if(x == "BKSP")
+						{
+							if(n.length == 1 || (n.length == 2 && n < 0))
+								n = 0;
+							else
+								n = n.slice(0,-1);
+						}
+						else if(x == "C")
+						{
+							n = 0;
+							a = 0;
+						}
+						else if(x == "AC")
+							n = 0;
+						else
+						{
+							if(n.length < 20)
+							{
+								if(x == ".")
+								{
+									if(n.indexOf(".") == -1)
+										n = n + x;
+								}
+								else
+								{
+									if(n == "0")
+										n = x;
+									else
+										n = n + x;
+								}
+							}
+						}
+						scr.value = n;
+					}
+					if(s==1)
+					{
+						if(x == "C")
+						{
+							n = 0;
+							a = 0;
+						}
+						else if(x == "AC")
+							n = 0;
+						else
+							n = x;
+							s = 0;
+							scr.value = n;
+					}
+				}
+				else if(y == 1)
+				{
+					if(x == "=")
+					{
+						if(b == 1)
+							a = a - ( - scr.value );
+						else if(b == 2)
+							a = a - scr.value;
+						else if(b == 3)
+							a = a * scr.value;
+						else if(b == 4)
+							a = a / scr.value;
+							
+					}
+					else if(x == "±")
+					{
+						if(n != 0)
+						n = - n;
+					}
+					else
+					{
+						a = scr.value;
+						s = 1;
+						if(x == "+")
+						b = 1;
+						else if(x == "-")
+						b = 2;
+						else if(x == "×")
+						b = 3;
+						else if(x == "÷")
+						b = 4;
+					}
+					scr.value = a;
+				}
+			}
+		</script>
+		<textarea id="scr" cols=21 rows=1 style="text-align=right" readonly="readonly" disabled="disabled">0</textarea>
+		<table border=1>
+			<tr>
+				<td><button onclick="move('C',0)" style="color=#ffffff">C</button></td>
+				<td><button onclick="move('AC',0)">AC</button></td>
+				<td><button onclick="move('BKSP',0)">←</button></td>
+				<td><button onclick="move('+',1)">+</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="move(7,0)">7</button></td>
+				<td><button onclick="move(8,0)">8</button></td>
+				<td><button onclick="move(9,0)">9</button></td>
+				<td><button onclick="move('-',1)">-</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="move(4,0)">4</button></td>
+				<td><button onclick="move(5,0)">5</button></td>
+				<td><button onclick="move(6,0)">6</button></td>
+				<td><button onclick="move('×',1)">×</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="move(1,0)">1</button></td>
+				<td><button onclick="move(2,0)">2</button></td>
+				<td><button onclick="move(3,0)">3</button></td>
+				<td><button onclick="move('÷',1)">÷</button></td>
+			</tr>
+			<tr><td><button onclick="move('.',0)">.</button></td>
+				<td><button onclick="move(0,0)">0</button></td>
+				<td><button onclick="move('±',1)">±</button></td>
+				<td><button onclick="move('=',1)">=</button></td>
+			</tr>
+		</table>
+	</body>
+</html>
