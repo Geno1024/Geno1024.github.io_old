@@ -3,11 +3,14 @@ body
 	background :#008080;
 }
 
-h4
+h1
 {
-	color : white;
+	font-size: 40px;
+	font-family: System;
 }
 
-h4#title
+p
 {
+	font-size: 10px;
+	font-family: System;
 }
