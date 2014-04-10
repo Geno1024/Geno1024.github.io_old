@@ -5,12 +5,55 @@ body
 
 h1
 {
+	font-size: 48px;
+	font-family: Verdana;
+	line-height: 2px;
+}
+
+h2
+{
 	font-size: 40px;
-	font-family: System;
+	font-family: Verdana;
+	line-height: 2px;
+}
+
+h3
+{
+	font-size: 32px;
+	font-family: Verdana;
+	line-height: 2px;
+}
+
+h4
+{
+	font-size: 24px;
+	font-family: Verdana;
+	line-height: 2px;
+}
+
+h5
+{
+	font-size: 16px;
+	font-family: Verdana;
+	line-height: 2px;
+}
+
+h6
+{
+	font-size: 8px;
+	font-family: Verdana;
+	line-height: 2px;
 }
 
 p
 {
-	font-size: 10px;
-	font-family: System;
+	font-size: 15px;
+	font-family: Tahoma;
+	line-height: 2px;
+}
+
+li
+{
+	font-size: 13px;
+	font-family: Tahoma;
 }
