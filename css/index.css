@@ -57,3 +57,8 @@ li
 	font-size: 13px;
 	font-family: Tahoma;
 }
+
+span.formula
+{
+	font-style: italic;
+}
