@@ -62,3 +62,8 @@ span.formula
 {
 	font-style: italic;
 }
+
+span.pascal
+{
+	color: #FF0000;
+}
