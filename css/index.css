@@ -7,35 +7,35 @@ h1
 {
 	font-size: 48px;
 	font-family: Verdana;
-	line-height: 2px;
+	line-height: 12px;
 }
 
 h2
 {
 	font-size: 40px;
 	font-family: Verdana;
-	line-height: 2px;
+	line-height: 10px;
 }
 
 h3
 {
 	font-size: 32px;
 	font-family: Verdana;
-	line-height: 2px;
+	line-height: 8px;
 }
 
 h4
 {
 	font-size: 24px;
 	font-family: Verdana;
-	line-height: 2px;
+	line-height: 6px;
 }
 
 h5
 {
 	font-size: 16px;
 	font-family: Verdana;
-	line-height: 2px;
+	line-height: 4px;
 }
 
 h6
@@ -56,15 +56,4 @@ li
 {
 	font-size: 13px;
 	font-family: Tahoma;
-}
-
-span.formula
-{
-	font-style: italic;
-	font-family: Simsun;
-}
-
-span.pascal
-{
-	color: #FF0000;
 }
