@@ -7,49 +7,49 @@ h1
 {
 	font-size: 48px;
 	font-family: Verdana;
-	line-height: 12px;
+	line-height: 48px;
 }
 
 h2
 {
 	font-size: 40px;
 	font-family: Verdana;
-	line-height: 10px;
+	line-height: 40px;
 }
 
 h3
 {
 	font-size: 32px;
 	font-family: Verdana;
-	line-height: 8px;
+	line-height: 32px;
 }
 
 h4
 {
 	font-size: 24px;
 	font-family: Verdana;
-	line-height: 6px;
+	line-height: 24px;
 }
 
 h5
 {
 	font-size: 16px;
 	font-family: Verdana;
-	line-height: 4px;
+	line-height: 16px;
 }
 
 h6
 {
 	font-size: 8px;
 	font-family: Verdana;
-	line-height: 2px;
+	line-height: 8px;
 }
 
 p
 {
 	font-size: 15px;
 	font-family: Tahoma;
-	line-height: 2px;
+	line-height: 5px;
 }
 
 li
