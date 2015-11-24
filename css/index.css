@@ -1,19 +1,19 @@
-body{background:#80ffff;}
+body{background: #80ffff; font-family: Consolas; }
 
-h1{font-size:48px;font-family:Verdana;line-height:48px;}
+h1{font-size: 48px; font-family: Verdana; line-height: 48px; }
 
-h2{font-size:40px;font-family:Verdana;line-height:40px;}
+h2{font-size: 40px; font-family: Verdana; line-height: 40px; }
 
-h3{font-size:32px;font-family:Verdana;line-height:32px;}
+h3{font-size: 32px; font-family: Verdana; line-height: 32px; }
 
-h4{font-size:24px;font-family:Verdana;line-height:24px;}
+h4{font-size: 24px; font-family: Verdana; line-height: 24px; }
 
-h5{font-size:16px;font-family:Verdana;line-height:16px;}
+h5{font-size: 16px; font-family: Verdana; line-height: 16px; }
 
-h6{font-size:8px;font-family:Verdana;line-height:8px;}
+h6{font-size: 8px; font-family: Verdana; line-height: 8px; }
 
-p{font-size:15px;font-family:Tahoma;line-height:20px;}
+p{font-size: 15px; font-family: Tahoma; line-height: 20px; }
 
-li{font-size:13px;font-family:Tahoma;}
+li{font-size: 13px; font-family: Tahoma; }
 
-strong{color:#FF0000}
+strong{color: #FF0000}
