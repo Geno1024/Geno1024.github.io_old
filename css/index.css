@@ -6,7 +6,9 @@ body{background: #80ffff; font-family: Consolas; width: 100%; }
 
 #container{position: relative; margin: 10px; width: 100%; height: 100%; }
 
-#footer{position: absolute; bottom: 0px; width: 100%; height: 64px; }
+#footer{position: absolute; bottom: 0px; width: 100%; height: 64px; border: 0; }
+
+#footer_body{position: absolute; text-align: center;}
 
 h1{font-size: 48px; line-height: 48px; }
 
