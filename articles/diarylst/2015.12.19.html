@@ -36,8 +36,14 @@
 			因此必定文件被加上了系统属性，只能走命令行了。<br />
 			WinKey + R, cmd, Enter.<br />
 			G:<br />
-			attrib -s -h G:\*.* /s /d<br/>
+			attrib -s -h G:\*.* /s /d<br />
 			其中 -s 去系统属性，-h 去隐藏属性，/s /d 合并起来为递归处理文件夹内全部文件。<br />
+			等了好久，以为这个 attrib 还被劫持了，于是 Ctrl + Z 掉，试一下：<br />
+			attrib -s -h G:\*.*<br />
+			这个 U 盘的根目录只有五个文件，然后发现一眨眼就好了，于是再次 /s /d，等久一会吧。<br />
+			等了大约两分多钟，attrib 顺利退出。全部文件（包括 System Volume Information）都被解除了系统隐藏属性。<br />
+			把 flgjahzqvm.vbs 从容删除。<br />
+			现在有 31 个文件/文件夹，除了 System Volume Information 之外就剩下 30 个，快捷方式有 15 个，正确。<br />
 			
 		</div>
 		<iframe id="footer" src="../../footer.html" scrolling="no">
